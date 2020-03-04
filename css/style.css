@@ -163,4 +163,57 @@
 .portfolio .portfolio-content .tile img {
   width: 100%;
 }
+
+/* FOOTER */
+footer .row {
+  margin: 15px 0;
+}
+
+footer .footer-icons {
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-size: 0;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+footer .footer-icons a {
+  text-decoration: none;
+}
+
+footer .footer-icons i {
+  color: #ffffff;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  background-color: #000000;
+  width: 35px;
+  height: 35px;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+footer .footer-icons .list {
+  padding: 0;
+}
+
+footer .footer-icons .list li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 15px;
+}
+
+footer .footer-icons .list li:first-of-type {
+  margin-left: 0;
+}
+
+footer .footer-text {
+  padding-left: 50px;
+}
+
+footer .footer-text p {
+  color: #777777;
+}
 /*# sourceMappingURL=style.css.map */
