@@ -14,6 +14,18 @@
   color: #777777;
 }
 
+.content-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.content-description {
+  text-align: center;
+  font-size: 14px;
+  color: #777777;
+}
+
 /*HEADER */
 .splash {
   background-image: url(/images/Splash.png);
@@ -27,24 +39,19 @@
   text-align: center;
 }
 
-.splash::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: #000000;
-  opacity: 0.5;
-}
-
 .splash a {
   text-decoration: none;
   color: #ffffff;
   cursor: pointer;
 }
 
-.menu {
+.splash .navigation {
+  margin-top: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.splash .navigation .menu {
   display: -ms-flexbox;
   display: flex;
   font-size: 14px;
@@ -54,38 +61,32 @@
       justify-content: center;
 }
 
-.menu li {
+.splash .navigation .menu li {
   display: inline-block;
   list-style-type: none;
   padding-left: 40px;
 }
 
-.brand {
+.splash .navigation .brand {
   color: #fed136;
   font-size: 26px;
   font-family: 'Lobster', cursive;
 }
 
-.navigation {
-  margin-top: 20px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.splash-text {
+.splash .splash-text {
   margin-top: 60px;
 }
 
-.splash-text h1 {
+.splash .splash-text h1 {
   font-size: 75px;
 }
 
-.splash-text h3 {
+.splash .splash-text h3 {
   font-size: 40px;
   font-family: 'Indie Flower', cursive;
 }
 
-.btn {
+.splash .btn {
   padding: 16px;
   margin: 0 auto;
   display: block;
@@ -98,9 +99,20 @@
   width: 240px;
 }
 
+.splash::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #000000;
+  opacity: 0.5;
+}
+
 /* SERVICES */
 .services {
-  height: 570px;
+  height: 400px;
   text-align: center;
 }
 
@@ -114,21 +126,27 @@
   font-size: 40px;
 }
 
-.service-title {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.service-description {
-  text-align: justify;
-  font-size: 14px;
-  color: #777777;
-}
-
-.service-content {
+.services .service-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  height: 1210px;
+  background-color: #f7f7f7;
+}
+
+.portfolio .portfolio-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.portfolio .portfolio-img-desc {
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
