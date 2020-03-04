@@ -161,9 +161,6 @@
 }
 
 .portfolio .portfolio-content .tile img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  overflow: hidden;
   width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
