@@ -141,15 +141,33 @@ $color-grey: #777777;
 /* PORTFOLIO */
 
 .portfolio {
-  height: 1210px;
+  height: 1050px;
   background-color: $color-light-purple;
 
   .portfolio-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+
+    .tile {
+      background: white;
+      padding: 0;
+      margin-bottom: 50px;
+
+      .content-description {
+        margin-top: 0;
+      }
+
+      .content-title {
+        margin-bottom: 5px;
+      }
+
+      img {
+        object-fit: cover;
+        overflow: hidden;
+        width: 100%;
+      }
+    }
+
   }
 
-  .portfolio-img-desc {
-    background-color: $color-white;
-  }
 }

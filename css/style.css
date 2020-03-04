@@ -135,18 +135,35 @@
 
 /* PORTFOLIO */
 .portfolio {
-  height: 1210px;
+  height: 1050px;
   background-color: #f7f7f7;
 }
 
 .portfolio .portfolio-content {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.portfolio .portfolio-img-desc {
-  background-color: #ffffff;
+.portfolio .portfolio-content .tile {
+  background: white;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.portfolio .portfolio-content .tile .content-description {
+  margin-top: 0;
+}
+
+.portfolio .portfolio-content .tile .content-title {
+  margin-bottom: 5px;
+}
+
+.portfolio .portfolio-content .tile img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
