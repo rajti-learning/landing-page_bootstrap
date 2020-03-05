@@ -147,8 +147,6 @@
 }
 
 .portfolio .portfolio-content {
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -242,6 +240,9 @@ footer .footer-text p {
   .content-description {
     font-size: 7px;
   }
+  .container {
+    width: 80%;
+  }
   /* SPLASH */
   .splash .navigation .brand {
     font-size: 10px;
@@ -279,6 +280,28 @@ footer .footer-text p {
     height: 50px;
     line-height: 43px;
     font-size: 25px;
+  }
+  /* PORTFOLIO */
+  .portfolio .portfolio-content .tile {
+    margin-bottom: 20px;
+  }
+  /* FOOTER */
+  footer .footer-icons {
+    -ms-flex-order: -1;
+        order: -1;
+  }
+  footer .footer-icons i {
+    width: 20px;
+    height: 20px;
+    line-height: 15px;
+    font-size: 12px;
+  }
+  footer .footer-text {
+    padding: 0;
+  }
+  footer .footer-text p {
+    font-size: 10px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -153,7 +153,6 @@ $color-grey: #777777;
   background-color: $color-light-purple;
 
   .portfolio-content {
-    display: flex;
     justify-content: space-around;
 
     .tile {
@@ -255,6 +254,10 @@ footer {
     font-size: 7px;
   }
 
+  .container {
+    width: 80%;
+  }
+
   /* SPLASH */
 
   .splash {
@@ -311,5 +314,39 @@ footer {
       font-size: 25px;
     }
   }
+
+  /* PORTFOLIO */
+
+  .portfolio {
+    .portfolio-content {
+      .tile {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+/* FOOTER */
+
+footer {
+  .footer-icons {
+    order: -1;
+
+    i {
+      width: 20px;
+      height: 20px;
+      line-height: 15px;
+      font-size: 12px;
+    }
+  }
+
+  .footer-text {
+    padding: 0;
+
+    p {
+      font-size: 10px;
+      text-align: center;
+    }
+  }
+}
 
 }
