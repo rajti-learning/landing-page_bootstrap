@@ -33,7 +33,7 @@
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 700px;
+  height: 100vh;
   position: relative;
   color: #ffffff;
   text-align: center;
@@ -61,10 +61,18 @@
       justify-content: center;
 }
 
+.splash .navigation .menu ul {
+  padding-left: 0;
+}
+
 .splash .navigation .menu li {
   display: inline-block;
   list-style-type: none;
   padding-left: 40px;
+}
+
+.splash .navigation .menu li:first-of-type {
+  padding-left: 0;
 }
 
 .splash .navigation .brand {
@@ -112,8 +120,8 @@
 
 /* SERVICES */
 .services {
-  height: 400px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .services i {
@@ -135,7 +143,6 @@
 
 /* PORTFOLIO */
 .portfolio {
-  height: 1050px;
   background-color: #f7f7f7;
 }
 
@@ -215,5 +222,63 @@ footer .footer-text {
 
 footer .footer-text p {
   color: #777777;
+}
+
+/* MEDIA */
+@media (max-width: 991px) {
+  /*GLOBAL */
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .section-subtitle {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 8px;
+  }
+  .content-title {
+    font-size: 9px;
+  }
+  .content-description {
+    font-size: 7px;
+  }
+  /* SPLASH */
+  .splash .navigation .brand {
+    font-size: 10px;
+  }
+  .splash .navigation .menu {
+    font-size: 10px;
+  }
+  .splash .navigation .menu li {
+    padding-left: 5px;
+  }
+  .splash ul {
+    display: inline-block;
+  }
+  .splash .splash-text h3 {
+    font-size: 15px;
+  }
+  .splash .splash-text h1 {
+    font-size: 30px;
+  }
+  .splash .btn {
+    width: 100px;
+    font-size: 10px;
+    padding: 5px;
+  }
+  /* SERVICES */
+  .services {
+    margin-bottom: 20px;
+  }
+  .services .service-content {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .services i {
+    width: 50px;
+    height: 50px;
+    line-height: 43px;
+    font-size: 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

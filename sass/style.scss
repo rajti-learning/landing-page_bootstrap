@@ -42,7 +42,7 @@ $color-grey: #777777;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 700px;
+  height: 100vh;
   position: relative;
   color: $color-white;
   text-align: center;
@@ -63,10 +63,18 @@ $color-grey: #777777;
       align-items: center;
       justify-content: center;
 
+      ul {
+        padding-left: 0;
+      }
+
       li {
         display: inline-block;
         list-style-type: none;
         padding-left: 40px;
+
+        &:first-of-type {
+          padding-left: 0;
+        }
       }
     }
 
@@ -79,6 +87,7 @@ $color-grey: #777777;
 
   .splash-text {
     margin-top: 60px;
+
 
     h1 {
         font-size: 75px;
@@ -119,8 +128,8 @@ $color-grey: #777777;
 /* SERVICES */
 
 .services {
-  height: 400px;
   text-align: center;
+  margin-bottom: 40px;
 
   i {
     color: $color-gold;
@@ -141,7 +150,6 @@ $color-grey: #777777;
 /* PORTFOLIO */
 
 .portfolio {
-  height: 1050px;
   background-color: $color-light-purple;
 
   .portfolio-content {
@@ -219,6 +227,89 @@ footer {
       color: $color-grey;
     }
 
+  }
+}
+
+/* MEDIA */
+
+@media /*(min-width: 768px) and*/ (max-width: 991px) {
+
+  /*GLOBAL */
+  .section-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .section-subtitle {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 8px;
+
+  }
+
+  .content-title {
+    font-size: 9px;
+  }
+
+  .content-description {
+    font-size: 7px;
+  }
+
+  /* SPLASH */
+
+  .splash {
+    .navigation {
+      .brand {
+        font-size: 10px;
+      }
+
+      .menu {
+        font-size: 10px;
+
+        li {
+          padding-left: 5px;
+        }
+      }
+    }
+
+    ul {
+      display: inline-block;
+    }
+
+    .splash-text {
+      h3 {
+        font-size: 15px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+
+    .btn {
+      width: 100px;
+      font-size: 10px;
+      padding: 5px;
+    }
+
+  }
+
+  /* SERVICES */
+
+  .services {
+
+    margin-bottom: 20px;
+
+    .service-content {
+      flex-direction: column;
+    }
+
+    i {
+      width: 50px;
+      height: 50px;
+      line-height: 43px;
+      font-size: 25px;
+    }
   }
 
 }
