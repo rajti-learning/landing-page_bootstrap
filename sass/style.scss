@@ -33,7 +33,6 @@ $color-grey: #777777;
   color: $color-grey;
 }
 
-
 /*HEADER */
 
 .splash {
@@ -88,7 +87,6 @@ $color-grey: #777777;
   .splash-text {
     margin-top: 60px;
 
-
     h1 {
         font-size: 75px;
     }
@@ -111,7 +109,6 @@ $color-grey: #777777;
     border-color: $color-gold;
     width: 240px;
   }
-
 }
 
 .splash::before {
@@ -225,7 +222,6 @@ footer {
     p{
       color: $color-grey;
     }
-
   }
 }
 
@@ -294,13 +290,11 @@ footer {
       font-size: 10px;
       padding: 5px;
     }
-
   }
 
   /* SERVICES */
 
   .services {
-
     margin-bottom: 20px;
 
     .service-content {
@@ -327,26 +321,26 @@ footer {
 
 /* FOOTER */
 
-footer {
-  .footer-icons {
-    order: -1;
+  footer {
+    .footer-icons {
+      order: -1;
 
-    i {
-      width: 20px;
-      height: 20px;
-      line-height: 15px;
-      font-size: 12px;
+      i {
+        width: 20px;
+        height: 20px;
+        line-height: 15px;
+        font-size: 12px;
+      }
+    }
+
+    .footer-text {
+      padding: 0;
+
+      p {
+        font-size: 10px;
+        text-align: center;
+      }
     }
   }
-
-  .footer-text {
-    padding: 0;
-
-    p {
-      font-size: 10px;
-      text-align: center;
-    }
-  }
-}
 
 }
